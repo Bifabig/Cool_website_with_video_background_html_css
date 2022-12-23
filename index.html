@@ -11,7 +11,7 @@
     <section class="showcase">
       <header>
         <h2 class="logo">Travel</h2>
-        <div class="toggle active"></div>
+        <div class="toggle"></div>
       </header>
       <video
         src="https://joy1.videvo.net/videvo_files/video/free/2017-08/large_watermarked/170724_15_Setangibeach_preview.mp4"
@@ -32,9 +32,15 @@
         <a href="#">Explore</a>
       </div>
       <ul class="social">
-        <li><img src="https://i.ibb.co/x7P24fL/facebook.png" /></li>
-        <li><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></li>
-        <li><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
+        </li>
       </ul>
     </section>
 
@@ -47,5 +53,15 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
